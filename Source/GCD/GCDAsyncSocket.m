@@ -7708,6 +7708,7 @@ static OSStatus SSLWriteFunction(SSLConnectionRef connection, const void *data, 
 		CFWriteStreamScheduleWithRunLoop(asyncSocket->writeStream, runLoop, kCFRunLoopDefaultMode);
 }
 
+//https://github.com/robbiehanson/CocoaAsyncSocket/pull/785
 + (void)unscheduleCFWriteStreams:(id)input
  {
      CFWriteStreamRef writeStream = (__bridge CFWriteStreamRef)input;
