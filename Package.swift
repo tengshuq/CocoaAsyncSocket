@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "CocoaAsyncSocket",
+    name: "TTCocoaAsyncSocket",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_10),
