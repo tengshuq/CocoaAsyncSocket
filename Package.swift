@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "HFCocoaAsyncSocket",
+    name: "CocoaAsyncSocket",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_10),
@@ -12,13 +12,13 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "HFCocoaAsyncSocket",
-            targets: ["HFCocoaAsyncSocket"]),
+            name: "CocoaAsyncSocket",
+            targets: ["CocoaAsyncSocket"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "HFCocoaAsyncSocket",
+            name: "CocoaAsyncSocket",
             dependencies: [],
             path: "Source/GCD",
             publicHeadersPath: ""),
